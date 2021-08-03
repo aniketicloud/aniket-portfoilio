@@ -1,0 +1,33 @@
+.main-head {
+  width: 95%;
+  margin: 0 0 0 auto;
+
+  // ! As it is scss, if I stack everything inside in here together. like .main-head{ nav{ ... } }
+  // ! later on media query, if I want to select nav. like @media{ nav{ ... }}; it doesn't work
+}
+
+nav {
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  width: 60%;
+  flex-wrap: wrap;
+
+  // todo: change the logo later to figma design (Aniket iCloud)
+  .logo {
+    @include flex(flex-start, center, row);
+    flex: 1 1 10rem;
+
+    // My Name 
+    h1 {
+      // ! todo: if name is changed check the margin
+      margin: 2rem;
+    }
+  }
+
+  // Links of other pages
+  ul {
+    @include flex(space-around, center, row);
+    // 40rem so it will wrap it sooner when changing viewport
+    flex: 1 1 40rem;
+  }
+}
