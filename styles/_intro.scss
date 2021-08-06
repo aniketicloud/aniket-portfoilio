@@ -41,7 +41,25 @@ nav {
 
   // iCloud Aniket
   h2 {
+    // I am not changing font size. So no need to add variables for fix size
+    // ? Or maybe later I will add it
     font-size: 8rem;
+    padding-top: 2rem;
+
+    background: $gradient;
+    // added -webkit-backkground-clip for chrome browser
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    // removing extra space of block element with inline-block
+    display: inline-block;
+  }
+
+  h3 {
+    font-size: 6rem;
+    // only top and bottom padding
+    padding: 2rem 0rem;
   }
 }
 
