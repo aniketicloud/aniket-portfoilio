@@ -17,7 +17,7 @@ nav {
     @include flex(flex-start, center, row);
     flex: 1 1 10rem;
 
-    // My Name 
+    // My Name
     h1 {
       // ! todo: if name is changed check the margin
       margin: 2rem;
@@ -30,4 +30,25 @@ nav {
     // 40rem so it will wrap it sooner when changing viewport
     flex: 1 1 40rem;
   }
+}
+
+.intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  @include flex(space-between, center, row);
+
+  // iCloud Aniket
+  h2 {
+    font-size: 8rem;
+  }
+}
+
+.splash {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  z-index: -1;
 }
