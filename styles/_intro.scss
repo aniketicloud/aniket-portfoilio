@@ -61,6 +61,10 @@ nav {
     // only top and bottom padding
     padding: 2rem 0rem;
   }
+  p {
+    padding-top: 2rem;
+    color: $gray-text;
+  }
 }
 
 .splash {
@@ -69,4 +73,23 @@ nav {
   right: 0%;
   height: 100%;
   z-index: -1;
+}
+
+.intro-social {
+  margin-top: 4rem;
+  a {
+    margin-right: 5rem;
+  }
+}
+
+.active {
+  background: $gray-text;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+.intro-text,
+.intro-images {
+  flex: 1 1 40rem;
 }

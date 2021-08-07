@@ -147,11 +147,38 @@ nav ul {
   padding: 2rem 0rem;
 }
 
+.intro p {
+  padding-top: 2rem;
+  color: #2c2c2c;
+}
+
 .splash {
   position: absolute;
   top: 0%;
   right: 0%;
   height: 100%;
   z-index: -1;
+}
+
+.intro-social {
+  margin-top: 4rem;
+}
+
+.intro-social a {
+  margin-right: 5rem;
+}
+
+.active {
+  background: #2c2c2c;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+.intro-text,
+.intro-images {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
 }
 /*# sourceMappingURL=index.css.map */
