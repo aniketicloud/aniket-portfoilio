@@ -111,3 +111,34 @@ nav {
     transform: translateY(-30%);
   }
 }
+
+// Animating myself
+#me {
+  animation: me 1s ease infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes me {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+
+// Animating my personal irreplceable clock
+#clock-arrow {
+  animation: clock 1s linear infinite;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
