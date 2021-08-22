@@ -1,36 +1,4 @@
-.main-head {
-  width: 95%;
-  margin: 0 0 0 auto;
 
-  // ! As it is scss, if I stack everything inside in here together. like .main-head{ nav{ ... } }
-  // ! later on media query, if I want to select nav. like @media{ nav{ ... }}; it doesn't work
-}
-
-nav {
-  @include flex(space-between, center, row);
-  min-height: 10vh;
-  width: 60%;
-  flex-wrap: wrap;
-
-  // todo: change the logo later to figma design (Aniket iCloud)
-  .logo {
-    @include flex(flex-start, center, row);
-    flex: 1 1 10rem;
-
-    // My Name
-    h1 {
-      // ! todo: if name is changed check the margin
-      margin: 2rem;
-    }
-  }
-
-  // Links of other pages
-  ul {
-    @include flex(space-around, center, row);
-    // 40rem so it will wrap it sooner when changing viewport
-    flex: 1 1 40rem;
-  }
-}
 
 .intro {
   min-height: 90vh;
@@ -94,51 +62,18 @@ nav {
   flex: 1 1 40rem;
 }
 
-// Animating things
-
 #plant-left {
   animation: plant 1.5s ease infinite alternate;
 }
 #plant-right {
   animation: plant 1.5s ease infinite alternate 0.5s;
 }
-
-@keyframes plant {
-  from {
-    transform: translateY(0%);
-  }
-  to {
-    transform: translateY(-30%);
-  }
-}
-
-// Animating myself
 #me {
   animation: me 1s ease infinite alternate;
   transform-origin: bottom;
 }
-
-@keyframes me {
-  from {
-    transform: rotateZ(-5deg);
-  }
-  to {
-    transform: rotateZ(5deg);
-  }
-}
-
-// Animating my personal irreplceable clock
 #clock-arrow {
-  animation: clock 1s linear infinite;
+  animation: clock 1.5s linear infinite;
   transform-box: fill-box;
   transform-origin: bottom;
-}
-
-@keyframes clock {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
-  }
 }
