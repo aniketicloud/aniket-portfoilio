@@ -110,6 +110,12 @@ a {
   }
 }
 
+@media screen and (max-width: 1496px) {
+  html {
+    font-size: 53%;
+  }
+}
+
 .main-head {
   width: 95%;
   margin: 0 0 0 auto;
