@@ -277,6 +277,10 @@ nav ul {
           transform-origin: bottom;
 }
 
+.projects {
+  height: 100%;
+}
+
 @media screen and (max-width: 1331px) {
   html {
     font-size: 53%;
